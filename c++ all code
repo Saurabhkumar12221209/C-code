@@ -1,0 +1,1643 @@
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     float r;
+//     float pi=3.14;
+//     cin>>r;
+//     cout<<pi*r*r<<endl;
+//     cout<<endl;
+//     cout<<"Next program"<<endl;
+//     int a,b;
+//     cin>>a>>b;
+//     cout<<"before swaping a="<<a<<" b="<<b<<endl;
+//     a=a+b;
+//     b=a-b;
+//     a=a-b;
+//     cout<<"After swaping a="<<a<<" b="<<b;
+//     return 0;
+// }
+
+
+// //syntax of class
+// #include<iostream>
+// using namespace std;
+// class employee
+// {
+//     public:  //access specifire
+//     int emid,salary,exp;  //data member
+//     char name[30];
+//     void get()  //member function
+//     {
+//         cin>>name>>salary>>exp;   //member function inside the class
+//     } 
+//     void put();
+// };
+// void employee::put()   //member function outside the class
+// {
+//     cout<<"empid: "<<emid<<endl<<"name: "<<name<<endl<<"salary: "<<salary<<endl<<"exp: "<<exp<<endl;
+// }
+// int main()
+// {
+//     employee s;
+//     cin>>s.emid;
+//     s.get();
+//     s.put();
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// class car
+// {
+//     private:
+//     char mn[99],c[99];
+//     int egn,m;
+//     public:
+//     void get();
+//     void print();
+// };
+// void car::get()
+// {
+//     cin>>mn>>c>>egn>>m;
+// }
+// void car::print()
+// {
+//     cout<<mn<<" "<<c<<" "<<egn<<" "<<m;
+// }
+// main()
+// {
+//     car c;
+//     c.get();
+//     c.print();
+// }
+
+// #include<iostream>
+// using namespace std;
+// class arithmetic
+// {
+//     private:
+//     int x,y;
+//     // public:
+//     int sum()
+//     {
+//         int z;
+//         z=x+y;
+//         return z;
+//     }
+//     int diff()
+//     {
+//         int z;
+//         z=x-y;
+//         return z;
+//     }
+//     public:
+//     void get()
+//     {
+//         cout<<"Enter the value of x and y"<<endl;
+//         cin>>x>>y;
+//     }
+//     void print()
+//     {
+//         cout<<"diff of x and y is: "<<sum()<<endl;
+//         cout<<"diff of x and y is: "<<diff()<<endl;
+//     }
+// };
+// int main()
+// {
+//     arithmetic a;
+//     a.get();
+//     a.print();
+//     return 0;
+// }
+
+//H\W
+/*rectangle
+l
+w
+getl()   //private
+getw()
+
+area()  //public
+*/
+
+
+
+// #include<iostream>
+// using namespace std;
+// class rectangle
+// {
+//     private:
+//     int l,w;
+//     int getl()
+//     {
+//         cin>>l;
+//         return l;
+//     }
+//     int getw()
+//     {
+//         cin>>w;
+//         return w;
+//     }
+//     public:
+//     void area()
+//     {
+//         int z,y,x;
+//         z=getl();
+//         y=getw();
+//         x=z*y;
+//         cout<<"Area of rectangle is: "<<x;
+
+//     }
+// };
+// main()
+// {
+//     rectangle a;
+//     a.area();
+// }
+
+
+
+// /*Write a program a class employee with member (ename,salary,eid,exp)=private and function (get and put)=public*/
+// #include<iostream>
+// using namespace std;
+// class employee
+// {
+//     private:
+//     int id,salary,exp;
+//     char name[99];
+//     public:
+//     int c=1;
+//     void get()
+//     {
+//         cout<<"Enter the id,name,salary,exp of an employee: "<<c<<endl;
+//         cin>>id>>name>>salary>>exp;
+//         c++;
+//     }
+//     void put()
+//     {
+//         cout<<id<<" "<<name<<" "<<salary<<" "<<exp<<endl;;
+//     }
+// };
+// main()
+// {
+//     employee e[5];
+//     for (int i=0;i<5;i++)
+//     {
+//         e[i].get();
+//         e[i].put();
+//     }
+// }
+
+
+// #include<iostream>
+// #include<string.h>
+// using namespace std;
+// struct student
+// {
+//     int rno,age;
+//     char name[3];
+//     void get()
+//     {
+//         cout<<"Enter RollNO,Name and Age of student:"<<endl;
+//         cin>>rno>>name>>age;
+//     }
+//     void put()
+//     {
+//         cout<<rno<<" "<<name<<" "<<age<<endl;
+//     }
+// };
+// int main()
+// {
+//     student s[5];
+//     for (int i=0;i<5;i++)
+//     {
+//         s[i].get();
+//     }
+//     cout<<endl;
+//     for (int i=0;i<5;i++)
+//     {
+//         if (strcmp(s[i].name,"abc")==0)
+//         {
+//             s[i].put();
+//         }
+//     }
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// enum level{easy=1,normal,hard};
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     switch (n)
+//     {
+//     case easy:
+//         cout<<"Level is easy: ";
+//         break;
+//     case normal:
+//         cout<<"Level is normal";
+//         break;
+//     case hard:
+//         cout<<"Level is hard";
+//         break;
+//     default:
+//         cout<<"incorrect option";
+//         break;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+// void sum(int n, int n1)
+// {
+//     int s;
+//     s=n+n1;
+//     cout<<s;
+// }
+// int main()
+// {
+//     int n,n1;
+//     cin>>n>>n1;
+//     sum(n,n1);
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// class records
+// {
+//     public:
+//     int exp,age;
+//     char ename[100],status[100];
+//     void get()
+//     {
+//         cout<<"Enter the employee name, exp, age, status:";
+//         cin>>ename>>exp>>age>>status;
+//     }
+//     void put();
+// }e;
+// inline void records::put()
+// {
+//     if (exp>5)
+//     {   
+//         cout<<ename<<" "<<exp<<" "<<age<<" "<<status;
+//     }
+// }
+// main()
+// {
+//     e.get();
+
+//     e.put();
+// }
+
+// /*static
+// how to use static data member and static member function*/
+// #include<iostream>
+// using namespace std;
+// class admission
+// {
+//     public:
+//     char name[100],hometown[100];
+//     int age;
+//     static int reg;
+//     void get()
+//     {
+//         cin>>name>>age>>hometown;
+//         reg++;
+//     }
+//     // void put()
+//     // {
+//     //     cout<<reg<<endl;
+//     // }
+//     static void put1()
+//     {
+//         cout<<reg<<endl;
+//     }
+//     void put()
+//     {
+//         cout<<reg<<endl;
+//     }
+// }s,s1;
+// int admission::reg;
+// int main()
+// {
+//     // s.put();
+//     s.get();
+//     s1.put();
+//     admission::put1();
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// class Money {
+//     public:
+//     int rupee;
+//     int paisa;
+//     void setRupee(int r) {
+//         rupee = r;
+//     }
+//     void setPaisa(int p){
+//         paisa= p;
+//     }
+//     int getRupee(){
+//         return rupee;
+//     }
+//     int getPaisa(){
+//         return paisa;
+//     }
+// };
+// int main(){
+//     Money m[2];
+//     int i,t;
+//     for (i=0;i<2;i++){
+//         Money a;
+//         m[i]=a;
+//         cin>>t;
+//         m[i].setRupee(t);
+//         cin>>t;
+//         m[i].setPaisa(t);
+//     }
+//     int r,p;
+//     r = m[0].getRupee()+m[1].getRupee();
+//     p = m[0].getPaisa()+m[1].getPaisa();
+//     if (p>99){
+//         r+=1;
+//         p = p-100;
+//     }
+//     cout<<r<<"."<<p;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// class si
+// {
+//     // int p;
+//     public:
+//     void si1(int p,float r=2.5,int t=3)
+//     {
+//         float s1;
+//         // cin>>p;
+//         s1=(p*r*t)/100;
+//         cout<<s1;
+//     }
+
+// }s;
+// int main()
+// {
+
+//     s.si1(1);
+//     // s.put();
+//     return 0;
+// }
+
+
+// /*program to call by value,call by refrence,call by address*/
+// #include<iostream>
+// using namespace std;
+// void value(int x,int y)
+// {
+//     int z;
+//     z=x;
+//     x=y;
+//     y=z;
+//     cout<<"After swap a="<<x<<" b="<<y;
+// }
+// void refrence(int &x,int &y)
+// {
+//     int z;
+//     z=x;
+//     x=y;
+//     y=z;
+//     cout<<"After swap a="<<x<<" b="<<y;
+// }
+// void address(int *x,int *y)
+// {
+//     int z;
+//     z=*x;
+//     *x=*y;
+//     *y=z;
+//     cout<<"After swap a="<<*x<<" b="<<*y<<endl;
+// }
+
+// int main()
+// {
+//     int a,b;
+//     cin>>a>>b;
+//     cout<<"Befor swap a="<<a<<" b="<<b<<endl;
+//     value(a,b);
+//     cout<<"After swap a="<<a<<" b="<<b<<endl;
+//     refrence(a,b);
+//     cout<<"After swap a="<<a<<" b="<<b<<endl;
+//     address(&a,&b);
+//     cout<<"After swap a="<<a<<" b="<<b<<endl;
+//     return 0;
+// }
+
+
+
+// // write a program using recursive using class
+// #include<iostream>
+// using namespace std;
+// class fact
+// {
+//     int n;
+//     public:
+//     int put(int n)
+//     {
+//         if (n>=1)
+//         {
+//         return n*put(n-1);
+//         }
+//         else 
+//         {
+//             return 1;
+//         }
+//     }
+// };
+// int main()
+// {
+//     fact f;
+//     int x;
+//     cin>>x;
+//     cout<<f.put(x);
+//     return 0;
+// }
+
+
+/*Topic to be cover before this week
+1.class
+2.structure.
+3.union.
+4.enum.
+5.function.
+Concepts and Basics of C++ Programming : Reading and writing data using cin and cout, 
+Creating classes, Class objects, Accessing class members, Differences between Structures, Unions, 
+Enumerations and Classes, Inline and Non-inline member functions, Static data members and static 
+member functions, Differences between procedural and object oriented programming paradigms, 
+Features of Input/output Streams
+Functions : Functions with Default parameters/arguments, Inline Functions, Manipulator Functions, 
+Function overloading and Scope rules, Friend of a class (friend function and friend class), Reference 
+variables, Differences between Call by value, Call by address and call by reference, Recursion
+(Function, Member Function).*/
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n,n1;
+//     cin>>n;
+//     int arr[100];
+//     for (int i=0;i<n;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     cin>>n1;
+//     int arr1[n1];
+//     for (int i=0;i<n1;i++)
+//     {
+//         cin>>arr1[i];
+//     }
+//     // int c=n+n1;
+//     // int arr2[c];
+//     // for (int i=0;i<n;i++)
+//     // {
+//     //     arr2[i]=arr[i];
+//     // }
+//     for (int i=0;i<n1;i++)
+//     {
+//         arr[n+i]=arr1[i];
+//     }
+//     for (int i=0;i<n+n1;i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+//     return 0;
+// }
+
+
+
+
+/********************************************************Pointer********************************************************************/
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cout<<"Enter the size of array: ";
+//     cin>>n;
+//     int arr[n];
+//     for (int i=0;i<n;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     int *p=arr;       // if you want to use the pointer with address
+//     int *q=&arr[3];   //  if you want to use the pointer with a specific address
+//     p=p+2;
+//     cout<<*p<<" "<<p<<endl;
+//     p=p-2;
+//     cout<<*p<<" "<<p<<endl;
+//     p++;
+//     cout<<*p<<" "<<p<<endl;
+//     ++p;
+//     cout<<*p<<" "<<p<<endl;
+//     p--;
+//     cout<<*p<<" "<<p<<endl;
+//     --p;
+//     cout<<*p<<" "<<p<<endl;
+//     p+=1;
+//     cout<<*p<<" "<<p<<endl;
+//     int e=q-p;
+//     cout<<e<<" "<<p<<" "<<q<<endl;
+// }
+
+
+// /*Sum of element using pointer*/
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//      int n;
+//     cout<<"Enter the size of array: ";
+//     cin>>n;
+//     int arr[n];
+//     for (int i=0;i<n;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     int *p=arr; 
+//     int s=0;
+//     for (int i=0;i<n;i++)
+//     {
+//         s=s+*p;
+//         p++;
+//     }
+//     cout<<"Sum is: "<<s;
+//     return 0;
+// }
+
+/*program to reverse a number using pointers*/
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//      int n;
+//     cout<<"Enter the size of array: ";
+//     cin>>n;
+//     int arr[n];
+//     for (int i=0;i<n;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     int *p=arr; 
+//     int s=0;
+//     for (int i=0;i<n;i++)
+//     {
+//         *p%=*p;
+//         s=s*10+*p;
+//         *p/=*p;
+//         p++;
+//     }
+//     cout<<"Sum is: "<<s;   
+//     return 0;
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int *ptr;
+//     {
+//         int v=20;
+//         ptr=&v;
+//         cout<<"Value is (inside block): "<<*ptr<<endl;
+//         cout<<"Addree is (inside block): "<<ptr<<endl;
+//     }
+//     cout<<"Value is (outside block): "<<*ptr<<endl;
+//     cout<<"Address is (outside block): "<<ptr<<endl;
+//     ptr=NULL;          //solution to dangling pointer (assign null address)
+//     cout<<"Value is (outside block): "<<*ptr<<endl;
+//     cout<<"Address is (outside block): "<<ptr<<endl;
+//     return 0;
+// }
+
+
+// /*write a program to check the prime number using pointer*/
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int *pvalue=NULL;  //Pointer initialize with null
+//     pvalue= new int;  //request memory for the variable
+//     *pvalue=23;      // Store value at allocated address
+//     cout<<"Value before deletion: "<<*pvalue<<endl;
+//     cout<<"Address where pointer is pointing before deletion: "<<pvalue<<endl;
+//     delete pvalue;          //free up the memory.
+//     cout<<"Value after deletion: "<<*pvalue<<endl;
+//     cout<<"Address where pointer is pointing after deletion: "<<pvalue<<endl;
+//     pvalue=NULL;  //pvalue is no longer a dangling pointer
+//     cout<<"\n"<<pvalue<<endl;
+//     return 0;
+// }
+
+
+/*******************************************************POINTER*************************************************************/
+/*pointet_to_data_member*/
+// #include<iostream>
+// using namespace std;
+// class book
+// {
+//     int *price;
+//     int *year;
+//     public:
+//     void getdata(int x,int y);
+//     void putdata();
+// };
+// void book::getdata(int x,int y)
+// {
+//     price=&x;
+//     year=&y;
+// }
+// void book::putdata()
+// {
+//     cout<<"Price is "<<*price<<endl;
+//     cout<<"Year is "<<*year<<endl;
+// }
+// int main()
+// {
+//     book b;
+//     b.getdata(400,2020);
+//     b.putdata();
+//     return 0;
+// }
+
+// /*Pointer_to_object_example*/
+// #include<iostream>
+// using namespace std;
+// class book
+// {
+//     int x;
+//     public:
+//     void getdata()
+//     {
+//         cout<<"Enter the value for x: ";
+//         cin>>x;
+//     }
+//     void putdata()
+//     {
+//         cout<<"Entered value is: "<<x<<endl;
+//     }
+// };
+// int main()
+// {
+//     book b;
+//     book *p;
+//     p=&b;
+//     p->getdata();  // or (*p).getdata() or b.getdata()
+//     (*p).putdata();
+//     return 0;
+// }
+
+// /*pointer_to_data_member*/
+// #include<iostream>
+// using namespace std;
+// class test
+// {
+//     public:
+//     int x;
+//     void showdata();
+// };
+// void test::showdata()
+// {
+//     cout<<"x="<<x;
+// }
+// int main()
+// {
+//     test t;
+//     int test::*p=&test::x;
+//     t.*p=20;
+//     t.showdata();
+//     return 0;
+// }
+
+// /*WAP */
+// #include<iostream>
+// #include<string>
+// #include<cstring>
+// using namespace std;
+// class movie
+// {
+//     public:
+//     int year;
+//     string title,award,hero,heroine,language;
+//     void getdata()
+//     {
+//         cout<<"Enter the year,title,award,hero,heroine,language:"<<endl;
+//         cin>>title>>award>>hero>>heroine>>language;
+//     }
+//     void put()
+//     {
+//         cout<<"year is: "<<year<<endl;
+//         cout<<"title is: "<<title<<endl;
+//         cout<<"award: "<<award<<endl;
+//         cout<<"hero is: "<<hero<<endl;
+//         cout<<"heroine is: "<<heroine<<endl;
+//         cout<<"language is: "<<language<<endl;
+//     }
+// };
+
+// int main()
+// {
+//     movie m;
+//     movie *p1;
+//     p1=&m;
+//     int movie::*p=&movie::year;
+//     cin>>p1->*p;//=2010;
+//     (*p1).getdata();
+//     (*p1).put();
+//}
+
+
+/*Findind sum of array using pointer*/
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int x;
+//     cin>>x;
+//     int arr[x];
+//     int *a =arr;
+//     for (int i=0;i<x;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     int sum=0;
+//     for (int i=0;i<x;i++)
+//     {
+//         sum=sum+*a;
+//         a++;
+//     }
+//     cout<<sum;
+//     return 0;
+// }
+
+// /*Finding max in array using pointer*/
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int x;
+//     cin>>x;
+//     int arr[x];
+//     int *a =arr;
+//     for (int i=0;i<x;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     int max;
+//     for (int i=0;i<x;i++)
+//     {
+//         max=*(a+i);
+//         for (int j=0;j<x;j++)
+//         {
+//             if (*(a+i)<*(a+j))
+//             {
+//                 max=*(a+j);
+//             }
+//         }
+//     }
+//     cout<<max;
+//     return 0;
+// }
+
+// /*I have to do it pointer*/
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin>>n;
+//     int arr[n][n];
+//     // int *a =&arr[0][0];
+//     for (int i=0;i<n;i++)
+//     {
+//         for (int j=0;j<n;j++)
+//         {
+//             cin>>arr[i][j];
+//         }
+//     }
+//     int max=arr[0][0];
+//     for (int i=0;i<n;i++)
+//     {
+//         for (int j=0;j<n;j++)
+//         {
+//             if (arr[i][j]>max)
+//             {
+//                 max=arr[i][j];
+//             }
+//         }
+//     }
+//     cout<<max;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int x;
+//     cin>>x;
+//     int arr[x];
+//     for (int i=0;i<x;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     int n;
+//     cin>>n;
+//     for (int i=x;i<x+1;i++)
+//     {
+//         arr[i]=n;
+//     }
+//     for (int i=0;i<x+1;i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+//     // cout<<sum;
+//     return 0;
+// }
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// int main()
+// {
+//     string s;
+//     getline(cin,s);
+//     string s1="AEIOUa eiou";
+//     int x=sizeof(s);
+//     int c=s.length();
+//     int t=s.length();
+//     cout<<x<<" "<<c<<endl;
+//     int count=0;
+//     for(int i=0;i<c;i++)
+//     {
+//         for (int j=0;j<t;j++)
+//         {
+//             if (s[i]!=s1[j])
+//             {
+//                 // cout<<s[i];
+//                 count++;
+//             }
+//         }
+//     }
+//     // cout<<s;
+//     cout<<endl<<count;
+//     return 0;
+// }
+
+
+// /*String TO upper case and lower case*/
+// #include<iostream>
+// #include<string>
+// #include<algorithm>
+// using namespace std;
+// int main()
+// {
+//     string s;
+//     getline(cin,s);
+//     transform(s.begin(),s.end(),s.begin(),::toupper);
+//     cout<<s<<endl;
+//     transform(s.begin(),s.end(),s.begin(),::tolower);
+//     cout<<s<<endl;
+//     /************************OR**************************************/
+//     int c=s.size();
+//     for(int i=0;i<c;i++)
+//     {
+//         if (s[i]>='a'&&s[i]<='z')
+//         {
+//             s[i]-=32;
+//         }
+//     }
+//     cout<<s<<endl;
+//     for(int i=0;i<c;i++)
+//     {
+//         if (s[i]>='A'&&s[i]<='Z')
+//         {
+//             s[i]+=32;
+//         }
+//     }
+//     cout<<s<<endl;
+//     return 0;
+// }
+
+
+/*From the biggest number from the Numeric string*/
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// int main()
+// {
+//     string s;
+//     getline(cin,s);
+//     int count=0,maxcount=1;
+//     for (int i=0;i<s.size();i++)
+//     {
+//         for (int j=0;j<s.size();j++)
+//         {
+//             if (s[i]==s[j])
+//             {
+//                 count++;
+//             }
+//         }
+//         if (count!=0)
+//         {
+//             maxcount=count;
+//         }
+//     }
+//     cout<<maxcount;
+//     // cout<<s;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     for (int i=0;i<n;i++)
+//     {
+//         while(n!=0)
+//         {
+//             cout<<i;
+//             n--;
+//         }
+//     }
+//     return 0;
+// }
+
+
+// /*linear search with class*/
+// #include<iostream>
+// using namespace std;
+// class search
+// {
+//     int arr[100],n,r,x=1;;
+//     public:
+//     void get()
+//     {
+//         cout<<"Enter the size of array: ";
+//         cin>>n;
+//     }
+//     void getarray()
+//     {
+//         for (int i=0;i<n;i++)
+//         {
+//             cout<<"Enter the element of array: ";
+//             cin>>arr[i];
+//         }
+//         cout<<"Enter the element you want: ";
+//         cin>>r;
+//     }
+//     void display()
+//     {
+//         for (int i=0;i<n;i++)
+//         {
+//             if (r==arr[i])
+//             {
+//                 cout<<"Element found"<<endl;
+//                 x=0;
+//             }
+//         }
+//         if (x!=0)
+//         {
+//             cout<<"Element not found"<<endl;
+//         }
+//     }
+// }s;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     s.get();
+//     s.getarray();
+//     s.display();
+//     return 0;
+// }
+
+
+// /*linear search with class using array as pointer*/
+// #include<iostream>
+// using namespace std;
+// class search
+// {
+//     int arr[100],n,r,x=1;
+//     int *p=arr;
+//     public:
+//     void get()
+//     {
+//         cout<<"Enter the size of array: ";
+//         cin>>n;
+//     }
+//     void getarray()
+//     {
+//         cout<<"Enter the element of array: ";
+//         for (int i=0;i<n;i++)
+//         {
+            
+//             cin>>arr[i];
+//         }
+//         cout<<"Enter the element you want: ";
+//         cin>>r;
+//     }
+//     void display()
+//     {
+//         for (int i=0;i<n;i++)
+//         {
+//             if (r==*p)
+//             {
+//                 cout<<"Element found"<<endl;
+//                 x=0;
+//             }
+//             p++;
+//         }
+//         if (x!=0)
+//         {
+//             cout<<"Element not found"<<endl;
+//         }
+//     }
+// }s;
+// int main()
+// {
+//     s.get();
+//     s.getarray();
+//     s.display();
+//     return 0;
+// }
+
+
+
+// /*linear search with class using array as pointer*/
+// #include<iostream>
+// using namespace std;
+// class search
+// {
+//     int arr[100],n,r,x=1,m,b=0,e;
+//     public:
+//     void get()
+//     {
+//         cout<<"Enter the size of array: ";
+//         cin>>n;
+//     }
+//     void getarray()
+//     {
+//         cout<<"Enter the element of array: ";
+//         for (int i=0;i<n;i++)
+//         {
+            
+//             cin>>arr[i];
+//         }
+//         cout<<"Enter the element you want: ";
+//         cin>>r;
+//     }
+//     void display()
+//     {
+//         e=n;
+//         while (b<=e)
+//         {
+//             m=(b+n)/2;
+//             if (r==arr[m])
+//             {
+//                 cout<<"Element found";
+//             }
+//             else if(r>arr[m])
+//             {
+//                 b=m+1;
+//             }
+//             else if (r<arr[m])
+//             {
+//                 e=m-1;
+//             }
+//             else 
+//             {
+//                 cout<<"Element not found";
+//             }
+//         }
+//     }
+// }s;
+// int main()
+// {
+//     s.get();
+//     s.getarray();
+//     s.display();
+//     return 0;
+// }
+
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for (int i=0;i<n;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     for (int i=0;i<n;i++)
+//     {
+//         for (int j=0;j<n;j++)
+//         {
+//             if (arr[i]<arr[j])
+//             {
+//                 int t=arr[i];
+//                 arr[i]=arr[j];
+//                 arr[j]=t;
+//             }
+//         }
+//     }
+//     for (int i=0;i<n;i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+//     return 0;
+// }   
+
+
+// #include<iostream>
+// using namespace std;
+// class rectangle
+// {
+//     int l,b;
+//     public:
+//     rectangle()   //default constructor
+//     {
+//         l=10;
+//         b=20;
+//     }
+//     void area()
+//     {
+//         cout<<l*b;
+//     }
+// }r;
+// int main()
+// {
+//     r.area();
+//     return 0;
+// }
+
+
+// /*write a program to create a class rectangle using parameterize constructor*/
+// #include<iostream>
+// using namespace std;
+// class rectangle
+// {
+//     int l,b;
+//     public:
+//     rectangle(int a,int c)   //default constructor
+//     {
+//         l=a;
+//         b=c;
+//     }
+//     void area()
+//     {
+//         cout<<l*b;
+//     }
+// };
+// int main()
+// {
+//     int a,c;
+//     cin>>a>>c;
+//     rectangle r(a,c);
+//     r.area();
+//     return 0;
+// }
+
+/*********************************************link list*********************************************/
+// #include<iostream>
+// using namespace std;
+// class node
+// {
+//     public:
+//     int data;
+//     node* next;
+//     node(int data)
+//     {
+//         this->data=data;
+//         this->next=NULL;
+//     }
+// };
+// void insert(node* &head,int d)
+// {
+//     node* temp=new node(d);
+//     temp->next=head;
+//     head=temp;
+// }
+// void position(node* &tail,node* &head,int p,int d)
+// {
+//     if (p==1)
+//     {
+//         insert(head,d);
+//         return;
+//     }
+//     node* temp=head;
+//     int c=1;
+//     while (c<p-1)
+//     {
+//         temp=temp->next;
+//         c++;
+//     }
+//     if (temp->next==NULL)
+//     {
+//         insertend(tail, d);
+//         return;
+//     }
+//     node* mid=new node(d);
+//     mid->next=temp->next;
+//     temp->next=mid;
+    
+// }
+// void insertend(node* &tail,int d)
+// {
+//     node* temp=new node(d);
+//     tail->next=temp;
+//     tail=tail->next;
+
+// }
+// void display(node* head)
+// {
+//     node* temp=head;
+//     while (temp!=NULL)
+//     {
+//         cout<<temp->data<<" ";
+//         temp=temp->next;
+//     }
+//     cout<<endl;
+// }
+// int main()
+// {
+//     node* node1=new node(10);
+//     node *head=node1;
+//     node* tail=node1;
+//     insert(head,20);
+//     insertend(tail,30);
+//     int p,d;
+//     cout<<"Enter the position you want to insert the node: ";
+//     cin>>p;
+//     cout<<"Enter the data: ";
+//     cin>>d;
+//     position(tail,head,p,d);
+//     display(head);
+//     cout<<head->data<<endl;
+//     cout<<tail->data<<endl;
+// }
+
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// class bank
+// {
+//     long long int acno,dob,bal;
+//     string name;
+//     public:
+//     bank(const string& d,int a,int b,int c) 
+//     {
+//         name=d;
+//         acno=a;
+//         dob=b;
+//         bal=c;
+//     }
+//     void display()
+//     {
+//         cout<<"Name: "<<name<<endl;
+//         cout<<"Account NO: "<<acno<<endl;
+//         cout<<"DOB: "<<dob<<endl;
+//         cout<<"Balance: "<<bal<<endl;
+//     }
+// };
+// int main()
+// {
+//     long long int a;
+//     int b,c;
+//     string s;
+//     getline(cin,s);    //how to take a input as
+//     cin>>a>>b>>c;
+//     bank r(s,a,b,c);
+//     r.display();
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// class counter
+// {
+//     int c;
+//     public:
+//     counter(int a)
+//     {
+//         c=a;
+//     }
+//     counter(counter &o)
+//     {
+//         cout<<"Copy is created:"<<endl;
+//         c=o.c;
+//         cout<<c;
+//     }
+// };
+// int main()
+// {
+//     counter c(10),o(c);
+//     // counter o(c);
+//     return 0;
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+// class marks
+// {
+//     int sci,mat;
+//     public:
+//     marks(int a,int b)
+//     {
+//         sci=a;
+//         mat=b;
+//     }
+//     marks (marks &s)
+//     {
+//         sci=s.sci;
+//         mat=s.mat;
+//         cout<<"Marks of science is: "<<sci<<endl;
+//         cout<<"Marks of maths is: "<<mat<<endl;
+
+//     }
+// };
+// int main()
+// {
+//     marks s1(10,20),s(s1);
+//     return 0;
+// }
+
+
+/*Multiplication of two square matrics*/
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int a[n][n],b[n][n],c[n][n];
+//     for (int i=0;i<n;i++)
+//     {
+//         for (int j=0;j<n;j++)
+//         {
+//             cin>>a[i][j];
+//         }
+//     }
+//     for (int i=0;i<n;i++)
+//     {
+//         for (int j=0;j<n;j++)
+//         {
+//             cin>>b[i][j];
+//         }
+//     }
+//     for (int i=0;i<n;i++)
+//     {
+//         for (int j=0;j<n;j++)
+//         {
+//             int sum=0;
+//             for(int k=0;k<n;k++)
+//             {
+//                 sum=sum+a[i][k]*b[k][j];
+//                 c[i][j]=sum;
+//             }
+//             cout<<c[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// class student
+// {
+//     int rno,marks[5],t=0;
+//     public:
+//     void get()
+//     {
+//         cin>>rno;
+//         for(int i=0;i<5;i++)
+//         {
+//             cin>>marks[i];
+//         }
+//         for(int i=0;i<5;i++)
+//         {
+//             t=t+marks[i];
+//         }
+//     }
+//     void put()
+//     {
+//         cout<<"Roll Number: "<<rno<<endl;
+//         cout<<"Total marks: "<<t<<endl;
+//     }
+// };
+// int main()
+// {
+//     int n,c=1;
+//     cin>>n;
+//     string name;
+//     student s[n];
+//     for (int i=0;i<n;i++)
+//     {
+//         cin.ignore();
+//         getline(cin,name);
+//         s[i].get();
+//         if (c!=0)
+//         {
+//             cout<<"Detail of student:"<<endl;
+//             c=0;
+//         }
+//         cout<<"Name: "<<name<<endl;
+//         s[i].put();
+//     }
+//     return 0;
+// }
+
+
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// int main()
+// {
+//     string n;
+//     getline(cin,n);
+//     char s,s1;
+//     // char s1=;
+//     int x=n.size();
+//     for (int i=0;i<x;i++)
+//     {
+//         if (i==0)
+//         {
+//             if (n[i]>='a'||n[i]<='z')
+//             {
+//                 n[i]-=32;
+//                 cout<<n[i];
+//             }
+//             else
+//             {
+//                 cout<<n[i];
+//             }
+//         }
+//         s=n[i];
+//         if (s>='a'&&s<='z'||s>='A'&&s<='Z')
+//         {
+//                 // cout<<i<<" "<<n[i]<<endl;
+//                 // return 0;
+//         }
+//         else {
+//             s1=n[i+1];
+//             if (s1>='a'&&s1<='z')
+//             {
+//                 s1=s1-32;
+//                 cout<<s1;
+//             }
+//             else{
+//                 cout<<s1;
+//             }
+            
+//         }
+//     }
+//     return 0;
+// }
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// int main()
+// {
+//     string p;
+//     getline(cin,p);
+//     int s=p.size();
+//     int count=0;
+//     for (int i=0;i<s;i++)
+//     {
+//         if (p[i]=='a'||p[i]=='e'||p[i]=='i'||p[i]=='o'||p[i]=='u'||p[i]==' '||p[i]=='A'||p[i]=='E'||p[i]=='I'||p[i]=='O'||p[i]=='U')
+//         {
+//             continue;
+//         }
+//         else{
+//             count++;
+//         }
+//     }
+//     cout<<count;
+//     return 0;
+// }
+
+
+/*sub string insert and deletion from specififc position*/
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s,s1,s2,s3;
+    getline(cin,s);
+    getline(cin,s1);
+    getline(cin,s2);
+    string x=s.append(s1);
+    cout<<x<<endl;
+    x.insert(5,s2);
+    cout<<x<<endl;
+    x=x.erase(5,4);
+    cout<<x<<endl;
+
+    return 0;
+}
+
+// #include<iostream>
+// using namespace std;
+// class student
+// {
+//     public:
+//     int rno,mark1,mark2,mark3;
+//     void get (int r,int m1,int m2,int m3)
+//     {
+//         rno=r;
+//         mark1=m1;
+//         mark2=m2;
+//         mark3=m3;
+//     }
+//     int totalmarks()
+//     {
+//         return mark1+mark2+mark3;
+//     }
+// };
+// int main()
+// {
+//     int n;
+//     int rno,mark1,mark2,mark3;
+//     cin>>n;
+//     student s[n];
+//     for (int i=0;i<n;i++)
+//     {
+//         cin>>rno>>mark1>>mark2>>mark3;
+//         s[i].get(rno,mark1,mark2,mark3);
+//     }
+//     for (int i=0;i<n;i++)
+//     {
+//         int t=s[i].totalmarks();
+//         cout<<t<<endl;
+//     }
+//     int max1=-1,max2=-1,max3=-3;
+//     int roll1,roll2,roll3;
+//     for (int i=0;i<n;i++)
+//     {
+//         if (s[i].mark1>max1)
+//         {
+//             max1=s[i].mark1;
+//             roll1=s[i].rno;
+//         }
+//         if (s[i].mark2>max2)
+//         {
+//             max2=s[i].mark2;
+//             roll2=s[i].rno;
+//         }
+//         if (s[i].mark3>max3)
+//         {
+//             max3=s[i].mark3;
+//             roll3=s[i].rno;
+//         }
+//     }
+//     cout<<"Rollno "<<roll1<<" "<<max1<<endl;
+//     cout<<"Rollno "<<roll2<<" "<<max2<<endl;
+//     cout<<"Rollno "<<roll3<<" "<<max3<<endl;
+//     int t=0;
+//     int max=1,ind;
+//     for (int i=0;i<n;i++)
+//     {
+//         t=s[i].totalmarks();
+//         if (t>max)
+//         {
+//             max=t;
+//             ind=i+1;
+//         }
+//     }
+//     cout<<ind<<" "<<"MAx is "<<max<<endl;
+//     return 0;
+// }
