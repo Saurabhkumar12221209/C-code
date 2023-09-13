@@ -1,0 +1,108 @@
+////#include <iostream>
+////
+////class LinearSearch {
+////public:
+////    LinearSearch(int arr[], int size) {
+////        array = arr;
+////        arraySize = size;
+////    }
+////
+////    int search(int target) {
+////        for (int i = 0; i < arraySize; ++i) {
+////            if (array[i] == target) {
+////                return i; // Element found, return its index
+////            }
+////        }
+////        return -1; // Element not found, return -1
+////    }
+////
+////private:
+////    int* array;
+////    int arraySize;
+////};
+////
+////int main() {
+////    int arr[] = {10, 25, 8, 17, 42, 5};
+////    int size = sizeof(arr) / sizeof(arr[0]);
+////    int target;
+////
+////    LinearSearch searcher(arr, size);
+////
+////    std::cout << "Enter the element you want to search for: ";
+////    std::cin >> target;
+////
+////    int result = searcher.search(target);
+////
+////    if (result != -1) {
+////        std::cout << "Element found at index " << result << std::endl;
+////    } else {
+////        std::cout << "Element not found in the array." << std::endl;
+////    }
+////
+////    return 0;
+////}
+//
+//#include<iostream>
+//using namespace std;
+//class search{
+//	public:
+//		int a[5];
+//		int i;
+//		int v;
+//		void get(){
+//			cout<<"enter the array";
+//			for(i=0;i<5;i++)
+//			cin>>a[i];
+//			cout<<"enter the element to be searched";
+//			cin>>v;
+//		}
+//		void linear()
+//		{
+//		for(i=0;i<5;i++)
+//		{
+//			if(v==a[i])
+//			break;
+//		}
+//		if(i==5)
+//		cout<<"not found";
+//		else
+//		cout<<"element found at:"<<i;
+//		}
+//		
+//};
+//int main(){
+//	search s;
+//	s.get();
+//	s.linear();
+//}
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for (int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    for (int i=0;i<n;i++)
+    {
+        for (int j=0;j<n;j++)
+        {
+            if (arr[i]<arr[j])
+            {
+                int t=arr[i];
+                arr[i]=arr[j];
+                arr[j]=t;
+            }
+        }
+    }
+    for (int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
+
